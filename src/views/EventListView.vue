@@ -1,7 +1,8 @@
 <script setup>
-import EventCard from '@/components/EventCard.vue'
 import { ref, onMounted } from 'vue'
+import EventCard from '@/components/EventCard.vue'
 import EventService from '@/services/EventService.js'
+
 
 const events = ref(null)
 
@@ -10,8 +11,8 @@ onMounted(() => {
     .then((response) => {
       events.value = response.data
     })
-    .catch((err) => {
-      console.log(err)
+    .catch((error) => {
+      console.log(error)
     })
 })
 </script>
