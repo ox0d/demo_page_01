@@ -4,8 +4,8 @@ import EventService from '@/services/EventService.js'
 
 const props = defineProps({
   id: {
-    required: true,
-  },
+    required: true
+  }
 })
 
 const event = ref(null)
